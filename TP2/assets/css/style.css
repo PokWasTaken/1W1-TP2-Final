@@ -1,0 +1,451 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Reset margin, padding, and set box-sizing for all elements */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align: initial;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    line-height: 25px;
+    /* Set font, background color, and center text for the body */
+}
+
+.global {
+    min-height: 100vh;
+    /* Set minimum width, center content, set minimum height, background color, and padding for the global container */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Remove text decoration and set text color for links */
+}
+
+a:hover {
+    color: #000000;
+    /* Change text color on hover for links */
+}
+
+/*Header*/
+/* .entete__global {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+}   */
+
+/*Navigation*/
+
+
+.conteneur__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: transform 1s, opacity 1s;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 0 0 20px 20px;
+    border: white 1px solid;
+    flex-wrap: wrap;
+}
+
+#bouton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chk-bouton {
+    display: none;
+}
+
+#chk-bouton:checked+.conteneur__menu {
+    /* display: flex; */
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*Accueil*/
+.accueil__global {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../img/bleach_hero.jpg");
+    background-size: cover;
+    /* Assure que l'image couvre toute la section */
+    background-position: center;
+    /* Centre l'image */
+    background-repeat: no-repeat;
+    /* Empêche l'image de se répéter */
+    height: 100vh;
+    /* Assure que la section prend toute la hauteur de la fenêtre */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.accueil__hero {
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+    font-size: 1rem;
+}
+
+.accueil__hero p {
+    width: 50%;
+    font-size: 16px;
+}
+
+/*Inscription*/
+
+#Inscription {
+    background-image: url("../img/bleach_inscription.jpeg");
+    background-repeat: no-repeat;
+    /* background-position: 50%;
+    background-size: 90%; */
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Inscription div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    /* margin-top: 300px;
+    margin-left: 20%; */
+    background-color: rgb(20, 20, 20);
+    border-radius: 25px;
+    box-shadow: 1px 10px 10px 1px #6E6E6E;
+}
+
+#Inscription h2 {
+    background-color: rgb(231, 134, 15);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+input {
+    border: solid lightgray 2px;
+}
+
+input:focus {
+    /*Effet lors d'un click dans l'input*/
+    border-style: groove;
+    background-color: lightgray;
+}
+
+#Inscription label {
+    color: white;
+}
+
+#Inscription label:nth-of-type(4)>label {
+    /*éléments dans sexe*/
+    border: 1px solid lightgray;
+    padding: 4px 8px;
+}
+
+#submit {
+    position: relative;
+    left: -90px;
+    bottom: -20px;
+
+}
+
+#reset {
+    position: relative;
+    right: -90px;
+    bottom: 30px;
+}
+
+#reset,
+#submit {
+    /*styles communs des boutons*/
+    width: 100px;
+    height: 33px;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    transition: all 0.5s;
+    border-radius: 5px;
+    z-index: 1;
+    /*Ne fonctionne pas*/
+}
+
+#submit:hover,
+#reset:hover {
+    /*transition des boutons*/
+    background-color: rgb(255, 41, 51);
+    border: 0px;
+    color: white;
+    border-radius: 1px;
+}
+
+
+/*Tableau*/
+
+
+
+table {
+    width: 50%;
+    height: 50%;
+    background-color: #212121;
+    /*Fond noir/dark*/
+    color: #FFF;
+    /* Texte blanc pour contraster */
+    border-collapse: collapse;
+    margin-left: 90px;
+    border: #FF6F00 3px solid;
+    font-size: clamp(0.625rem, 0.4107rem + 0.8571vw, 1rem);
+
+}
+
+/* En-tête avec un fond sombre et une bordure soulignant l'importance */
+caption {
+    font-size: 1.8rem;
+    font-family: 'BleachFont', sans-serif;
+    color: #FF6F00;
+    /* Accent couleur (référence aux pouvoirs spirituels) */
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #000;
+    border-bottom: 2px solid #FF6F00;
+    border-radius: 10px 10px 0px 0px;
+    font-size: clamp(0.625rem, 0.4107rem + 0.8571vw, 1rem);
+}
+
+/* En-tête des jours de la semaine */
+thead th {
+    background-color: #000;
+    color: #FF6F00;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Bordures et mise en valeur des cellules */
+td,
+th {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    font-size: clamp(0.625rem, 0.4107rem + 0.8571vw, 1rem);
+}
+
+/* Celles qui sont "importantes" ou avec des événements spéciaux */
+.m-1w1,
+.diagonal {
+    background-color: #FF6F00;
+    /* Accent color pour marquer l'importance */
+    color: white;
+    font-weight: bold;
+}
+
+/* Bordures diagonales et effets visuels (représentation de Reiatsu) */
+/* .diagonal {
+        position: relative;
+        font-size: 1.3rem;
+    } */
+
+/* .diagonal::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(255, 111, 0, 0.5), rgba(255, 255, 255, 0.5));
+        transform: rotate(-45deg);
+        pointer-events: none;
+    } */
+
+/* Disposition verticale de certaines cellules pour imiter l'effet "impact" */
+.vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 1.1rem;
+    color: #FF6F00;
+}
+
+/* Ajout d'un effet de lumière ou d'ombre pour les éléments importants */
+td.rowspan,
+th.rowspan {
+    background-color: rgba(255, 111, 0, 0.3);
+    /* Effet de lumière spirituelle */
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.7);
+    /* Ombre lumineuse */
+}
+
+/* Ajouter des styles pour les événements spéciaux */
+.m-1w1 {
+    background-color: #FF6F00;
+    /* Orange pour mettre en valeur */
+}
+
+
+/*Articles*/
+/* .articles__global{
+        width: 100%;
+        min-height:100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+     .articles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        width: 45%; 
+     } */
+
+/* 
+        .global__articles{
+            display: flex;
+            
+        }     
+
+        .articles__img{
+            max-width: 200px; 
+            height: auto;
+            width: 80%;
+        } */
+
+/* .articles__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-wrap: wrap;
+        border: 3px black solid;
+        border-radius: 20px 20px 20px 20px;
+        width: 45%;
+        height: 45%;
+       
+    } */
+
+/* .articles__flex enfant{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        align-items: center;
+        width: 50%;
+        flex-wrap:wrap ;
+        padding: 15px;
+        gap: 15px;
+        background: rgba(0, 0, 0, 0.5);
+        border: 2px solid #FF6F00;
+        border-radius: 15px;
+        transition: transform 0.3s ease, background 0.3s ease; */
+
+/* 
+        .articles__flex:hover {
+            transform: scale(1.05);
+            background: rgba(255, 111, 0, 0.2);
+             */
+
+.global__articles {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+}
+
+.articles__flex {
+    border: #000 3px solid;
+    flex-basis: 45%;
+    border-radius: 20px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-bottom: 5%;
+    font-size: 1rem;
+    line-height: 25px;    
+}
+
+.articles__img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.articles__flex:hover {
+    transform: scale(1.05);
+    background: rgba(255, 111, 0, 0.2);
+}
+
+/*Galerie*/
+/*Video*/
+
+/*Pied*/
+
+
+
+
+
+.article{
+    display:flex;
+    justify-content: space-between;
+    border: #000 3px solid;
+    flex-basis: 45%;
+    border-radius: 20px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-bottom: 5%;
+    margin: 2%;
+  }
+
+  .article:hover{
+    transform: scale(1.05);
+    background: rgba(255, 111, 0, 0.2);
+  }
+  
+  .article figure{
+  flex: 0 0 300px;
+
+  }
+  .article figure img {
+    width : 100%;
+    height : auto;
+    border-radius: 20px;
+  }
+  
+  .article:nth-of-type(odd) figure{
+    order : 9;
+  }
+  
+  .article div{
+    flex: 1;
+    padding: 1em;
+    line-height: 1.8;
+    font-size: 1.3rem;
+  }

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.htm</title>
+    <!-- Inclusion du fichier de normalisation CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- Inclusion du fichier de style principal -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Contenu de la page -->
+    <header id="entete" class="header">
+        <section class="entete__global">
+            <label for="chk-bouton" id="bouton">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=fff" width="32" height="32" alt="hero image" />
+            </label>
+            <!-- Checkbox caché pour contrôler l'état du menu -->
+            <input type="checkbox" id="chk-bouton" />
+            <nav class="conteneur__menu"><!-- Menu de navigation -->
+                <a class="menu__liens" href="#Accueil " >Accueil</a>
+                <a class="menu__liens" href="#Inscription " >Inscription</a>
+                <a class="menu__liens" href="#Tableau " >Tableau</a>
+                <a class="menu__liens" href="#Articles " >Articles</a>
+                <a class="menu__liens" href="#Galerie " >Galerie</a>
+                <a class="menu__liens" href="#Vidéos " >Vidéos</a>
+                <a class="menu__liens" href="#Pied " >Infos</a>
+            </nav>
+        </section>
+    </header>
+    <section class="global principal__global">
+        <div class="principal__sections">
+            <!-- Section Accueil -->
+            <section id="Accueil" class="accueil__global">
+                <div class="accueil__hero">
+                    <h1>Bleach: L'oeuvre manga la plus influentielle de notre temps?</h1>
+                    <p>Bleach est une série manga et anime qui suit Ichigo Kurosaki, un adolescent capable de voir les
+                        esprits. a Après avoir acquis des pouvoirs surnaturels d'un "Shinigami" (Faucheur d'âmes), il
+                        devient responsable de protéger les vivants des créatures maléfiques appelées Hollows. <br>
+                        Entre batailles épiques et intrigues mystérieuses, Ichigo se lance dans une aventure pour
+                        découvrir ses véritables pouvoirs et protéger ceux qu'il aime. Une série captivante mêlant
+                        action, émotion et mystère.</p>
+                    <p>Tp-2,, Léandre Nicolas-Fernandez 582-1W1 - Mise en page Web, Techniques d'intégration, Collège de Maisonneuve, github.com/PokWasTaken, Automne 2024</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Section Inscription -->
+
+    <div id="Inscription" class="global">
+        <form>
+            <div>
+                <h2>Formulaire d'Inscription </h2>
+                <label>Nom
+                    <input type="text" required="">
+                </label>
+                <label>Prénom
+                    <input type="text" required="">
+                </label>
+                <label>Courriel
+                    <input type="email" required="">
+                </label>
+                <fieldset><span class="sexe-label">Sexe:</span>
+                    <label> Homme
+                        <input type="radio" name="sexe">
+                    </label>
+                    <label>Femme
+                        <input type="radio" name="sexe">
+                    </label>
+                    <label>Autre
+                        <input type="radio" name="sexe">
+                    </label>
+                </fieldset>
+                <label>Date de Naissance
+                    <input type="number" min="1" max="31">
+                    <input type="month">
+                </label>
+                <input id="submit" type="submit" value="Envoyer">
+                <input id="reset" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <!-- Section Tableau -->
+    <section id="tableau" class="global tableau">
+        <h1>Tableau</h1>
+        <table>
+            <caption>Horaire d'Entrainement d'Ichigo Kurosaki </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                </tr>
+            </thead>
+            <!-- 8h  -->
+            <tr>
+                <th>8h</th>
+                <td class="m-1w1" rowspan="2">
+                    <h2 class="diagonal">Entrainement avec <br>Yoruichi</h2>
+                </td>
+                <td></td>
+                <td rowspan="4">Parler avec Zangestu</td>
+                <td class="vertical" rowspan="10">Repos</td>
+                <td class="m-1w1" rowspan="3">
+                    <h2 class="diagonal">Combattre avec <br>Kenpachi</h2>
+                </td>
+            </tr>
+            <!-- 9h  -->
+            <tr>
+                <th>9h</th>
+                <td class="m-1w1" rowspan="3">
+                    <h2 class="diagonal">Déjeuner avec <br>Orihime</h2>
+                </td>
+            </tr>
+            <!-- 10h  -->
+            <tr>
+                <th>10h</th>
+                <td rowspan="8">Libre</td>
+            </tr>
+            <!-- 11h  -->
+            <tr>
+                <th>11h</th>
+                <td rowspan="2">Libre</td>
+            </tr>
+            <!-- 12h  -->
+            <tr>
+                <th>12h</th>
+                <td rowspan="2">Avec Renji</td>
+                <td>Dispo</td>
+            </tr>
+            <!-- 13h  -->
+            <tr>
+                <th>13h</th>
+                <td class="diagonal" rowspan="3">Réunion avec les <br>capitaines de divisions</td>
+                <td rowspan="4">Entrainement seul</td>
+            </tr>
+            <!-- 14h  -->
+            <tr>
+                <th>14h</th>
+                <td rowspan="4">Libre</td>
+            </tr>
+            <!-- 15h  -->
+            <tr>
+                <th>15h</th>
+            </tr>
+            <!-- 16h  -->
+            <tr>
+                <th>16h</th>
+                <td class="m-1w1" rowspan="2">
+                    <h2 class="diagonal">Dîner avec <br>les autres</h2>
+                </td>
+            </tr>
+            <!-- 17h  -->
+            <tr>
+                <th>17h</th>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section Articles -->
+    <h1>Les Espadas de Bleach</h1>
+    <div id="articles" class=" global global__articles">
+        <article class="articles__flex">
+            <img src="assets/img/starkk.jpg" alt="starkk" class="articles__img">
+            <h2>Starkk</h2>
+            <figcaption>Espada Numéro 1</figcaption>
+            <p>Starrk est une figure calme et mélancolique, souvent désintéressée par le chaos qui l’entoure. Sa paresse
+                cache un profond sentiment de solitude, né du fait que sa puissance immense a involontairement tué ceux
+                qui l’approchaient. Il aspire à créer des liens authentiques, ce qui se reflète dans sa relation avec
+                Lilynette, une partie de son âme. Starrk préfère éviter les combats inutiles, mais il reste loyal envers
+                Aizen et agit quand cela est nécessaire.</p>
+        </article>
+        <article class="articles__flex">
+            <img src="assets/img/barragan.webp" alt="barragan" class="articles__img">
+            <h2>Barragan</h2>
+            <figcaption>Espada Numéro 2</figcaption>
+            <p>Baraggan incarne l’arrogance et l’autorité, se considérant comme un roi, même parmi les Espadas. Ancien
+                souverain de Hueco Mundo avant d’être détrôné par Aizen, il traite les autres comme des pions
+                insignifiants. Baraggan se délecte de sa supériorité, notamment grâce à son pouvoir de contrôler la
+                décomposition et le vieillissement. Sa personnalité royale et imposante est cependant entachée par une
+                arrogance qui le rend aveugle à ses propres faiblesses.</p>
+        </article>
+        <article class="articles__flex">
+            <img src="assets/img/harribel.webp" alt="harribel" class="articles__img">
+            <h2>Harribel</h2>
+            <figcaption>Espada Numéro 3</figcaption>
+            <p>Harribel est stoïque, calme et incarne une force tranquille. Elle se distingue par sa nature protectrice,
+                particulièrement envers ses Fracción, qu’elle considère comme sa famille. Elle valorise la loyauté et
+                est prête à se sacrifier pour protéger les plus faibles. Contrairement à de nombreux autres Espadas,
+                Harribel ne combat pas par cruauté ou par plaisir, mais pour bâtir un monde où les opprimés ne souffrent
+                plus. Sa sérénité cache un profond sens de la justice et de la compassion.
+            </p>
+        </article>
+        <!-- </div><div class="global__articles"> -->
+        <article class="articles__flex">
+            <img src="assets/img/ulquiorra.webp" alt="ulquiorra" class="articles__img">
+            <h2>Ulquiorra</h2>
+            <figcaption>Espada Numéro 4</figcaption>
+            <p>Ulquiorra est l’incarnation du nihilisme et du détachement émotionnel. Il aborde la vie avec une logique
+                froide, ne croyant qu’en ce qu’il peut observer et mesurer. Cela le conduit à rejeter des concepts comme
+                les émotions, l’âme ou le cœur, qu’il considère comme dénués de sens. Sa nature calme et méthodique fait
+                de lui un adversaire redoutable, rarement pris de colère ou de frustration. Cependant, derrière son
+                apathie se cache une curiosité subtile envers la condition humaine, notamment à travers ses interactions
+                avec Orihime Inoue.</p>
+        </article>
+        <article class="articles__flex">
+            <img src="assets/img/nnoitra.webp" alt="nnoitra" class="articles__img">
+            <h2>Nnoitra</h2>
+            <figcaption>Espada Numéro 5</figcaption>
+            <p>Nnoitra est agressif, orgueilleux et profondément misogyne, souvent enclin à rabaisser les femmes et à
+                nier leur force. Son obsession à prouver sa supériorité le pousse à chercher des combats incessants, peu
+                importe les conséquences. Son arrogance masque un complexe d’infériorité, le forçant à prouver sa valeur
+                à tout prix. Sa personnalité abrasive et ses tendances sadiques font de lui l’un des Espadas les plus
+                brutaux, bien que ses insécurités soient au cœur de son comportement.
+            </p>
+        </article>
+        <article class="articles__flex">
+            <img src="assets/img/grimmjow.webp" alt="grimmjow" class="articles__img">
+            <h2>Grimmjow</h2>
+            <figcaption>Espada Numéro 6</figcaption>
+            <p>Grimmjow est sauvage, rebelle et farouchement indépendant. Il vit pour le combat et embrasse ses
+                instincts primaires, appréciant le frisson des affrontements contre des adversaires puissants. Son
+                comportement agressif cache une personnalité complexe, marquée par son désir de surmonter son passé
+                d’Adjuchas impuissant. La fierté est au centre de son caractère ; il refuse de se soumettre à quiconque,
+                même à Aizen, et méprise ceux qui le sous-estiment. Malgré son attitude brutale, Grimmjow respecte la
+                force et combat avec honneur, comme en témoigne sa rivalité avec Ichigo Kurosaki.</p>
+        </article>
+    </div>
+    <section class="global global__article">
+        <article class="article">
+            <figure>
+                <img src="assets/img/ichigo.webp" alt="ichigo">
+                <figcaption>Shinigami, Visored et Quincy</figcaption>
+            </figure>
+            <div>
+                <h2>Ichigo Kurosaki</h2>
+                <p>Ichigo Kurosaki est un jeune homme marqué par un fort sens du devoir et une détermination
+                    inébranlable. Il est naturellement courageux et possède un instinct protecteur presque instinctif
+                    envers ses proches, notamment sa famille et ses amis. Même face à des menaces qui le dépassent, il
+                    se tient toujours prêt à se battre, souvent au péril de sa vie. Pourtant, cette bravoure est parfois
+                    teintée d'impulsivité, ce qui le pousse à agir sans toujours réfléchir aux conséquences. Malgré
+                    cela, Ichigo est profondément empathique et bienveillant, même s’il préfère souvent masquer ses
+                    émotions derrière une façade distante ou sarcastique. Sa complexité réside dans ce mélange de force
+                    brute, de sensibilité cachée et d’un désir intense de toujours faire ce qui est juste.</p>
+            </div>
+        </article>
+
+        <article class="article">
+            <figure>
+                <img src="assets/img/ruki.webp" alt="rukia">
+                <figcaption>Shinigami</figcaption>
+            </figure>
+            <div>
+                <h2>Rukia Kuchiki</h2>
+                <p>Rukia Kuchiki est une personne d’une grande intelligence et loyauté, mais aussi une femme de
+                    principes et de fierté. Issue d’une famille noble, elle est habituée à cacher ses véritables
+                    émotions sous une façade de discipline et de rigueur. Elle peut paraître froide ou distante au
+                    premier abord, mais au fil du temps, elle révèle une personnalité chaleureuse, dotée d’une grande
+                    sensibilité. Son humour souvent décalé et son penchant pour l’ironie ajoutent une touche surprenante
+                    à son caractère strict. Malgré sa petite taille et son apparente fragilité, Rukia fait preuve d’une
+                    résilience impressionnante et d’un courage indomptable face aux épreuves, toujours prête à se
+                    sacrifier pour ceux qu’elle aime.</p>
+            </div>
+        </article>
+
+        <article class="article">
+            <figure>
+                <img src="assets/img/chad.webp" alt="sado">
+                <figcaption>Fullbringer</figcaption>
+            </figure>
+            <div>
+                <h2>Yasutora "Chad" Sado</h2>
+                <p>Yasutora "Chad" Sado est un homme de peu de mots, mais dont les actions parlent toujours plus fort
+                    que ses paroles. Calme et réfléchi, Chad est une force tranquille qui inspire le respect par sa
+                    simple présence. Derrière sa carrure imposante et sa grande force physique se cache une âme douce et
+                    compatissante, profondément marquée par un fort sens de la justice. Chad est incroyablement loyal et
+                    protecteur, notamment envers Ichigo, qu’il considère comme un véritable frère d’armes. Sa nature
+                    discrète et son humilité lui permettent de rester en arrière-plan, mais il n’hésite jamais à se
+                    mettre en danger pour défendre ceux qui comptent pour lui.</p>
+            </div>
+        </article>
+
+        <article class="article">
+            <figure>
+                <img src="assets/img/uryu.webp" alt="uryu">
+                <figcaption>Quincy</figcaption>
+            </figure>
+            <div>
+                <h2>Uryu Ishida</h2>
+                <p>Uryu Ishida, quant à lui, est un individu sérieux, méthodique et doté d’une intelligence aiguë.
+                    Descendant des Quincy, il porte avec fierté l’héritage de son peuple, ce qui influence fortement sa
+                    personnalité et ses choix. Fier et perfectionniste, il a tendance à garder ses distances avec les
+                    autres, ce qui peut donner l’impression qu’il est froid ou arrogant. Cependant, Uryu est animé par
+                    un profond désir de protéger les autres et de réparer les injustices, même si cela le pousse parfois
+                    à agir seul. Son comportement rigide cache une grande sensibilité et un respect sincère pour ses
+                    alliés, bien qu’il préfère l’exprimer à travers ses actions plutôt que par des paroles.</p>
+            </div>
+        </article>
+
+    </section>
+
+
+    <!-- Section Galerie -->
+    <h1>Les différents lieux de Bleach</h1>
+    <section id="galerie" class="global global__galerie">
+        <div class="galerie__img"><img src="assets/img/ywatch.jpg" class="galerie__column" alt="ywatch"><img
+                src="assets/img/ichigo2.jpg" alt="ichigo 2" class="galerie__column">
+        </div>
+        <div class="galerie__img">
+            <img src="assets/img/karakura.webp" alt="karakura" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/soul.avif" alt="soul" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/hueco.webp" alt="hueco" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/wanden.webp" alt="wanden" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/tower.webp" alt="tower" class="galerie__conteneur" tabindex="0">
+            <!-- <img src="assets/img/silbern.webp" alt="silbern" class="galerie__conteneur" > -->
+        </div>
+        <div class="galerie__img">
+            <img src="assets/img/dangai.webp" alt="dangai" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/hell.webp" alt="hell" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/palace SK.webp" alt="palace" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/rukongai.webp" alt="rukongai" class="galerie__conteneur" tabindex="0">
+            <img src="assets/img/wahrweit.webp" alt="wahrweit" class="galerie__conteneur" tabindex="0">
+        </div>
+        <div class="galerie__img"><img src="assets/img/aizen.jpg" class="galerie__column" alt="aizen"> <img
+                src="assets/img/grimmjow2.jpg" class="galerie__column" alt="grimmjow2">
+        </div>
+    </section>
+
+    <!-- Section Vidéos -->
+    <section id="vidéos" class="global__video">
+        <h1>Vidéo</h1>
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9Sdss7AXask" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wW9TwZdWpjw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/78WIYzX_m98" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W_6AGLGWcww" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!--  Section Pied 
+                <section id="Pied" class="Pied">                    
+                    <h1>Pied</h1>
+                </section>-->
+    <footer id="pied" class="footer">
+        <!-- Contenu du pied de page -->
+    </footer>
+</body>
+
+</html>
