@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!-- Inclusion du fichier de style principal -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Inclusion de la police Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,18 +18,19 @@
     <header id="entete" class="header">
         <section class="entete__global">
             <label for="chk-bouton" id="bouton">
-                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=fff" width="32" height="32" alt="hero image" />
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=fff" width="32" height="32"
+                    alt="hero image" />
             </label>
             <!-- Checkbox caché pour contrôler l'état du menu -->
             <input type="checkbox" id="chk-bouton" />
             <nav class="conteneur__menu"><!-- Menu de navigation -->
-                <a class="menu__liens" href="#Accueil " >Accueil</a>
-                <a class="menu__liens" href="#Inscription " >Inscription</a>
-                <a class="menu__liens" href="#Tableau " >Tableau</a>
-                <a class="menu__liens" href="#Articles " >Articles</a>
-                <a class="menu__liens" href="#Galerie " >Galerie</a>
-                <a class="menu__liens" href="#Vidéos " >Vidéos</a>
-                <a class="menu__liens" href="#Pied " >Infos</a>
+                <a class="menu__liens" href="#Accueil ">Accueil</a>
+                <a class="menu__liens" href="#Inscription ">Inscription</a>
+                <a class="menu__liens" href="#Tableau ">Tableau</a>
+                <a class="menu__liens" href="#Articles ">Articles</a>
+                <a class="menu__liens" href="#Galerie ">Galerie</a>
+                <a class="menu__liens" href="#Vidéos ">Vidéos</a>
+                <a class="menu__liens" href="#Pied ">Infos</a>
             </nav>
         </section>
     </header>
@@ -43,7 +46,8 @@
                         Entre batailles épiques et intrigues mystérieuses, Ichigo se lance dans une aventure pour
                         découvrir ses véritables pouvoirs et protéger ceux qu'il aime. Une série captivante mêlant
                         action, émotion et mystère.</p>
-                    <p>Tp-2,, Léandre Nicolas-Fernandez 582-1W1 - Mise en page Web, Techniques d'intégration, Collège de Maisonneuve, github.com/PokWasTaken, Automne 2024</p>
+                    <p>Tp-2,, Léandre Nicolas-Fernandez 582-1W1 - Mise en page Web, Techniques d'intégration, Collège de
+                        Maisonneuve, github.com/PokWasTaken, Automne 2024</p>
                 </div>
             </section>
         </div>
@@ -85,7 +89,7 @@
     </div>
     <!-- Section Tableau -->
     <section id="tableau" class="global tableau">
-        <h1>Tableau</h1>
+        <h1>L'horaire typique de Ichigo Kurosaki</h1>
         <table>
             <caption>Horaire d'Entrainement d'Ichigo Kurosaki </caption>
             <thead>
@@ -239,7 +243,7 @@
                 <img src="assets/img/ichigo.webp" alt="ichigo">
                 <figcaption>Shinigami, Visored et Quincy</figcaption>
             </figure>
-            <div>
+            <div class="article__texte">
                 <h2>Ichigo Kurosaki</h2>
                 <p>Ichigo Kurosaki est un jeune homme marqué par un fort sens du devoir et une détermination
                     inébranlable. Il est naturellement courageux et possède un instinct protecteur presque instinctif
@@ -257,7 +261,7 @@
                 <img src="assets/img/ruki.webp" alt="rukia">
                 <figcaption>Shinigami</figcaption>
             </figure>
-            <div>
+            <div class="article__texte">
                 <h2>Rukia Kuchiki</h2>
                 <p>Rukia Kuchiki est une personne d’une grande intelligence et loyauté, mais aussi une femme de
                     principes et de fierté. Issue d’une famille noble, elle est habituée à cacher ses véritables
@@ -275,7 +279,7 @@
                 <img src="assets/img/chad.webp" alt="sado">
                 <figcaption>Fullbringer</figcaption>
             </figure>
-            <div>
+            <div class="article__texte">
                 <h2>Yasutora "Chad" Sado</h2>
                 <p>Yasutora "Chad" Sado est un homme de peu de mots, mais dont les actions parlent toujours plus fort
                     que ses paroles. Calme et réfléchi, Chad est une force tranquille qui inspire le respect par sa
@@ -292,7 +296,7 @@
                 <img src="assets/img/uryu.webp" alt="uryu">
                 <figcaption>Quincy</figcaption>
             </figure>
-            <div>
+            <div class="article__texte">
                 <h2>Uryu Ishida</h2>
                 <p>Uryu Ishida, quant à lui, est un individu sérieux, méthodique et doté d’une intelligence aiguë.
                     Descendant des Quincy, il porte avec fierté l’héritage de son peuple, ce qui influence fortement sa
@@ -335,19 +339,27 @@
 
     <!-- Section Vidéos -->
     <section id="vidéos" class="global__video">
-        <h1>Vidéo</h1>
+        <h1>Quelques vidéos</h1>
         <div class="video-wrapper">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9Sdss7AXask" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9Sdss7AXask"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wW9TwZdWpjw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wW9TwZdWpjw"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/78WIYzX_m98" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/78WIYzX_m98"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/W_6AGLGWcww" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W_6AGLGWcww"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -355,8 +367,37 @@
                 <section id="Pied" class="Pied">                    
                     <h1>Pied</h1>
                 </section>-->
-    <footer id="pied" class="footer">
-        <!-- Contenu du pied de page -->
+    <footer id="pied" class="global__footer">
+        <div class="footer-content">
+            <div class="footer-section adresse">
+                <h2>Adresse du Collège</h2>
+                <p>Collège de Maisonneuve<br>3800 Rue Sherbrooke E, Montréal, QC H1X 2A2, Canada</p>
+            </div>
+            <div class="footer-section liens-importants">
+                <h2>Liens importants</h2>
+                <a href="github.com/PokWasTaken">Mon Github</a><br>
+                <a href="https://discord.gg/VQqxPjMs">Serveur Discord</a><br>
+                <a href="https://bleach.fandom.com/wiki/Summer!_Sea!_Swimsuit_Festival!!">Meilleur épisode de Bleach</a>
+            </div>
+            <div class="footer-section description">
+                <h2>Description du département</h2>
+                <p>Le département de Techniques d'intégration multimédia offre une formation complète en développement
+                    web, design graphique, et production multimédia.</p>
+            </div>
+            <div class="footer-section reseaux-sociaux">
+                <h2>Réseaux sociaux</h2>
+                <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32"
+                        height="32"></a>
+                <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=000" width="32" height="32"></a>
+                <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000" width="32"
+                        height="32"></a>
+                <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32"
+                        height="32"></a>
+            </div>
+            <div class="footer-section avis">
+                <p><a href="#">Avis de confidentialité | Privacy Notice</a></p>
+            </div>
+        </div>
     </footer>
 </body>
 
