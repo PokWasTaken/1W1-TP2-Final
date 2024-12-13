@@ -289,7 +289,7 @@ th {
     background-color: #FF6F00;
     /* Accent color pour marquer l'importance */
     color: white;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* Disposition verticale de certaines cellules pour imiter l'effet "impact" */
