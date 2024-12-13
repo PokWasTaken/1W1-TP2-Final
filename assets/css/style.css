@@ -64,6 +64,7 @@ h1 {
     border-radius: 0 0 20px 20px;
     border: white 1px solid;
     flex-wrap: wrap;
+    z-index: 500;
 }
 
 #bouton {
@@ -177,6 +178,11 @@ input {
     border: solid lightgray 2px;
 }
 
+.sexe-label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 input:focus {
     /*Effet lors d'un click dans l'input*/
     border-style: groove;
@@ -281,6 +287,7 @@ th {
     padding: 10px;
     text-align: center;
     font-size: clamp(0.625rem, 0.4107rem + 0.8571vw, 1rem);
+    border-bottom: 1px solid #ffffff;
 }
 
 /* Celles qui sont "importantes" ou avec des événements spéciaux */
@@ -298,6 +305,7 @@ th {
     transform: rotate(180deg);
     font-size: 1.1rem;
     color: #FF6F00;
+    text-align: center;
 }
 
 /* Ajout d'un effet de lumière ou d'ombre pour les éléments importants */
@@ -313,18 +321,6 @@ th.rowspan {
 .m-1w1 {
     background-color: #FF6F00;
     /* Orange pour mettre en valeur */
-}
-
-.sexe-label {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-th,
-td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #FF6F00;
 }
 
 th {
@@ -631,3 +627,139 @@ tr:hover {
     color: #FF6F00;
     text-decoration: underline;
 }
+/* .footer-section a img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+.footer-section a {
+    font-size: 1rem;
+    color: #FF6F00;
+    text-decoration: underline;
+}
+
+.global__final {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.global__final h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.final__div__1,
+.final__div__2,
+.final__div__3 {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.final__div__1 {
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    flex-wrap: wrap-reverse;
+}
+
+.final__div__liens {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1%;
+}
+
+.final__div__btn {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 5%;
+}
+
+.final__div__texte {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 60%;
+}
+
+.final__div__liens a,
+.final__div__btn a {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.global__final img {
+    width: 50%;
+}
+
+.final__div__btn button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.global__final button:hover {
+    background-color: #e65c00;
+}
+
+.social-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.search-form {
+    position: relative;
+    flex: 1;
+}
+
+.search-form input[type="text"] {
+    width: 250px;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-form::before {
+    content: url('https://s2.svgbox.net/hero-outline.svg?ic=search&color=000');
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.final__div__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.final__div__3 p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+} */
