@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Reset margin, padding, and set box-sizing for all elements */
 }
 
 html {
@@ -13,36 +12,28 @@ html {
 
 body {
     font-family: 'Pirata One', cursive;
-    /* Change the font to Pirata One */
     background: linear-gradient(to bottom, #fff6e8, #ffcf86);
-    /* Adjust the colors as needed */
     color: #000000;
     line-height: 30px;
     margin: 0;
-    /* Set font, background color, and center text for the body */
 }
 
 .global {
     min-height: 100vh;
-    /* Set minimum width, center content, set minimum height, background color, and padding for the global container */
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
-    /* Remove text decoration and set text color for links */
 }
 
 a:hover {
     color: #000000;
-    /* Change text color on hover for links */
 }
 
 h1 {
     text-align: center;
 }
-
-/*Header*/
 
 /*Navigation*/
 
@@ -126,9 +117,7 @@ h1 {
 
 .accueil__hero p {
     width: 100%;
-    /* Ensure paragraphs take full width */
     max-width: 85%;
-    /* Limit the width on larger screens */
     font-size: 20px;
     line-height: 30px;
     display: flex;
